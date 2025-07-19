@@ -248,7 +248,7 @@ window.addEventListener('load', async () => {
     {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ subdomain: 'wbrich', fbc, fbp })
+      body: JSON.stringify({ subdomain: 'wbrich', fbc, fbp,  pixel_id: PIXEL_ID })
     }
   );
   if (!resp.ok) throw new Error(`LineManager error: ${resp.status}`);
